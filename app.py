@@ -11,8 +11,8 @@ import seaborn as sns
 import streamlit as st
 
 # Load dataset
-file_path = r"D:\\Naan Mudhalvan\\House Price India.csv"
-df = pd.read_csv(file_path)
+df = pd.read_csv("House Price India.csv")
+
 
 # Fill NA only for numeric columns
 df.fillna(df.select_dtypes(include=[np.number]).mean(), inplace=True)
